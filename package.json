@@ -1,0 +1,12 @@
+{
+  "name": "nodetests",
+  "version": "0.0.1",
+  "description": "Testing node and other Stuff",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "author": "Martin (Rapid Firing)",
+  "license": "MIT",
+  "homepage": "https://github.com/RapidFiring/nodetests#readme"
+}

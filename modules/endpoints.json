@@ -1,0 +1,110 @@
+[
+    {
+    CREST : {
+
+    },
+    XML: {
+        Account:{
+            AccountStatus : '/account/AccountStatus.xml.aspx',
+            APIKeyInfo : '/account/APIKeyInfo.xml.aspx',
+            Characters : '/account/Characters.xml.aspx'
+        },
+        API:{
+            CallList : '/api/CallList.xml.aspx'
+        },
+        Character:{
+            AccountBalance : '/char/AccountBalance.xml.aspx',
+            AssetList : '/char/AssetList.xml.aspx',
+            Blueprints : '/char/Blueprints.xml.aspx',
+            Bookmarks : '/char/Bookmarks.xml.aspx',
+            CalendarEventAttendees : '/char/CalendarEventAttendees.xml.aspx',
+            CharacterSheet : '/char/CharacterSheet.xml.aspx',
+            ChatChannels : '/char/ChatChannels.xml.aspx',
+            ContactList : '/char/ContactList.xml.aspx',
+            ContactNotifications : '/char/ContactNotifications.xml.aspx',
+            ContractBids : '/char/ContractBids.xml.aspx',
+            ContractItems : '/char/ContractItems.xml.aspx',
+            Contracts : '/char/Contracts.xml.aspx',
+            FacWarStats : '/char/FacWarStats.xml.aspx',
+            IndustryJobs : '/char/IndustryJobs.xml.aspx',
+            IndustryJobsHistory : '/char/IndustryJobsHistory.xml.aspx',
+            KillLog : '/char/KillLog.xml.aspx',
+            KillMails : '/char/KillMails.xml.aspx',
+            Locations : '/char/Locations.xml.aspx',
+            MailBodies : '/char/MailBodies.xml.aspx',
+            MailingLists : '/char/MailingLists.xml.aspx',
+            MailMessages : '/char/MailMessages.xml.aspx',
+            MarketOrders : '/char/MarketOrders.xml.aspx',
+            Medals : '/char/Medals.xml.aspx',
+            Notifications : '/char/Notifications.xml.aspx',
+            NotificationTexts : '/char/NotificationTexts.xml.aspx',
+            PlanetaryColonies : '/char/PlanetaryColonies.xml.aspx',
+            PlanetaryLinks : '/char/PlanetaryLinks.xml.aspx',
+            PlanetaryPins : '/char/PlanetaryPins.xml.aspx',
+            PlanetaryRoutes : '/char/PlanetaryRoutes.xml.aspx',
+            Research : '/char/Research.xml.aspx',
+            SkillInTraining : '/char/SkillInTraining.xml.aspx',
+            SkillQueue : '/char/SkillQueue.xml.aspx',
+            Standings : '/char/Standings.xml.aspx',
+            UpcomingCalendarEvents : '/char/UpcomingCalendarEvents.xml.aspx',
+            WalletJournal : '/char/WalletJournal.xml.aspx',
+            WalletTransactions : '/char/WalletTransactions.xml.aspx'
+        },
+        Corporation:{
+            AccountBalance : '/corp/AccountBalance.xml.aspx',
+            AssetList : '/corp/AssetList.xml.aspx',
+            Blueprints : '/corp/Blueprints.xml.aspx',
+            Bookmarks : '/corp/Bookmarks.xml.aspx',
+            ContactList : '/corp/ContactList.xml.aspx',
+            ContainerLog : '/corp/ContainerLog.xml.aspx',
+            ContractBids : '/corp/ContractBids.xml.aspx',
+            ContractItems : '/corp/ContractItems.xml.aspx',
+            Contracts : '/corp/Contracts.xml.aspx',
+            CorporationSheet : '/corp/CorporationSheet.xml.aspx',
+            CustomsOffices : '/corp/CustomsOffices.xml.aspx',
+            Facilities : '/corp/Facilities.xml.aspx',
+            FacWarStats : '/corp/FacWarStats.xml.aspx',
+            IndustryJobs : '/corp/IndustryJobs.xml.aspx',
+            IndustryJobsHistory : '/corp/IndustryJobsHistory.xml.aspx',
+            KillMails : '/corp/KillMails.xml.aspx',
+            Locations : '/corp/Locations.xml.aspx',
+            MarketOrders : '/corp/MarketOrders.xml.aspx',
+            Medals : '/corp/Medals.xml.aspx',
+            MemberMedals : '/corp/MemberMedals.xml.aspx',
+            MemberSecurity : '/corp/MemberSecurity.xml.aspx',
+            MemberSecurityLog : '/corp/MemberSecurityLog.xml.aspx',
+            MemberTracking : '/corp/MemberTracking.xml.aspx',
+            OutpostList : '/corp/OutpostList.xml.aspx',
+            OutpostServiceDetail : '/corp/OutpostServiceDetail.xml.aspx',
+            Shareholders : '/corp/Shareholders.xml.aspx',
+            Standings : '/corp/Standings.xml.aspx',
+            StarbaseDetail : '/corp/StarbaseDetail.xml.aspx',
+            StarbaseList : '/corp/StarbaseList.xml.aspx',
+            Titles : '/corp/Titles.xml.aspx',
+            WalletJournal : '/corp/WalletJournal.xml.aspx',
+            WalletTransactions : '/corp/WalletTransactions.xml.aspx'
+        },
+        Eve:{
+            AllianceList : '/eve/AllianceList.xml.aspx',
+            CharacterAffiliation : '/eve/CharacterAffiliation.xml.aspx',
+            CharacterID : '/eve/CharacterID.xml.aspx',
+            CharacterInfo : '/eve/CharacterInfo.xml.aspx',
+            CharacterName : '/eve/CharacterName.xml.aspx',
+            ConquerableStationList : '/eve/ConquerableStationList.xml.aspx',
+            ErrorList : '/eve/ErrorList.xml.aspx',
+            RefTypes : '/eve/RefTypes.xml.aspx',
+            TypeName : '/eve/TypeName.xml.aspx'
+        },
+        Map:{
+            FacWarSystems : '/map/FacWarSystems.xml.aspx',
+            Jumps : '/map/Jumps.xml.aspx',
+            Kills : '/map/Kills.xml.aspx',
+            Sovereignty : '/map/Sovereignty.xml.aspx'
+        },
+        map:{
+            mapStatus : '/map/mapStatus.xml.aspx'
+        },
+        url: "https://api.eveonline.com",
+        verify: "?keyID=API_KEY_ID&vCode=API_VERIFICATION_CODE"
+    }
+]
