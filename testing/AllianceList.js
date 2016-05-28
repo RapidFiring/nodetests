@@ -15,7 +15,6 @@ class AllianceList {
         this._XmlClient.setParams({
              version: versionId
         });
-        this._XmlClient.fetch('')
     }
     getAllianceById(id) {
         return new Promise((resolve, reject) => {

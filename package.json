@@ -8,5 +8,11 @@
   },
   "author": "Martin (Rapid Firing)",
   "license": "MIT",
-  "homepage": "https://github.com/RapidFiring/nodetests#readme"
+  "homepage": "https://github.com/RapidFiring/nodetests#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "evejsapi": "^1.0.6",
+    "lodash": "^4.13.1",
+    "restify": "^4.1.0"
+  }
 }
