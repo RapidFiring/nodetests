@@ -3,7 +3,7 @@
 const evejsapi = require('evejsapi');
 const _ = require('lodash');
 const chalk = require('chalk');
-const util = require('util');
+const ProgressBar = require('progress');
 
 const CorpSheet = require('./CorporationSheet');
 
@@ -34,7 +34,7 @@ function corpIsActive(id) {
 
 function checkContactActivity(value) {
   return new Promise((resolve, reject) => {
-    if (value.labelMask == '1' || value.labelMask == '2' || value.labelMask == '8' || value.labelMask == '512') {
+    if (value.labelMask === '1' || value.labelMask === '2' || value.labelMask === '8' || value.labelMask === '512') {
       switch (value.contactTypeID) {
         case '2':
           corpIsActive(value.contactID)
@@ -130,13 +130,20 @@ XmlClient.fetch('corp:ContactList', {
     let countList = _.size(acList);
     cachedUntil = data.cachedUntil;
 
+    const barOpts = {
+      width: 50,
+      total: countList,
+      clear: true
+    };
+
     console.log('verarbeitung startet!');
 
-    acList.reduce((previousValue, currentValue, index) => {
+    const bar = new ProgressBar(' fetching contacts [:bar] :current / :total - :etas', barOpts);
+    acList.reduce((previousValue, currentValue) => {
 
       return previousValue
         .then((memo) => {
-          console.log('number', (index + 1) , '/', countList);
+          bar.tick();
           return checkContactActivity(currentValue, XmlClient)
             .then((checkThis) => {
               if (checkThis) {
@@ -165,19 +172,20 @@ XmlClient.fetch('corp:ContactList', {
           console.log('label verarbeitet!' + sizeCorps);
           if (sizeCorps > 0) {
             _.forEach(sortCorps, (corp) => {
-              console.log(count + "\t[" + corp.contactTypeID + "]\t[" + corp.standing + "]\t(" + corp.contactID + ")\t" + corp.contactName);
+              console.log(count + '\t[' + corp.contactTypeID + ']\t[' + corp.standing + ']\t(' + corp.contactID + ')\t' + corp.contactName);
               count++;
             });
           } else {
             console.log('Es wurden keine Daten gefunden! ' + sizeCorps);
           }
         });
-        console.log(chalk.green('cachedUntil: ' + cachedUntil + ' ET'));
 
-        XmlClient.getCache().disconnect();
+        console.log('');
+        console.log(chalk.green('cachedUntil: ' + cachedUntil + ' ET'));
+        process.exit(0);
       });
   })
   .catch((err) => {
     console.error(err);
-    XmlClient.getCache().disconnect();
+    process.exit(0);
   });
