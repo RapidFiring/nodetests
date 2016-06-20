@@ -12,8 +12,8 @@ const XmlClient = new evejsapi.client.xml({
   }),
 });
 XmlClient.setParams({
-  keyID: '2924405',
-  vCode: 'zd6XGV82MfiFs9KsIVUzjiXHmzNIvvA5AruDKGOfhltaQjKtO1LTX2UdiHNgob9X'
+  keyID: 'EVE-API-KEYID',
+  vCode: 'EVE-API-VCODE'
 });
 
 XmlClient.fetch('corp:IndustryJobs')
